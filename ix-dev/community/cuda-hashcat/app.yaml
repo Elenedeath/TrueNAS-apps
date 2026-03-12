@@ -2,7 +2,7 @@ appversion: 7.1.2
 capabilities: []
 categories:
 - security
-dateadded: '2026-03-12'
+dateadded: 2026-03-12
 description: CUDA Hashcat + John Ripper - GPU password cracking
 home: https://github.com/Elenedeath/cuda-hashcat-john
 hostmounts: []
@@ -18,3 +18,12 @@ maintainers:
   name: truenas
   url: https://www.truenas.com/
 name: cuda_hashcat
+runascontext:
+- description: Container cuda-hashcat non-root.
+  gid: 568
+  group_name: apps
+  uid: 568
+  user_name: apps
+title: CUDA Hashcat
+train: community
+version: 1.0.0
